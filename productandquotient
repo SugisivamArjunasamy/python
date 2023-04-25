@@ -1,0 +1,6 @@
+a=int(input('Enter the first number\n'))
+b=int(input('Enter the second number\n'))
+print("Product of two numbers is",(a*b))
+c=int(a/b)
+print("Quotient of two numbers is",c)
+print("Remainder of two numbers is",(a%b))
