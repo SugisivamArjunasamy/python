@@ -1,0 +1,8 @@
+a=int(input('Enter the side of square\n'))
+print("Area of square is",(a*a))
+print("Enter length and breadth of rectangle")
+b=int(input())
+e=int(input())
+print("Area of rectangle is",(b*e))
+c=float(input('Enter the radius of circle\n'))
+print("Area of circle is",(3.14*c*c))
