@@ -1,0 +1,6 @@
+age=int(input('Enter your current age\n'))
+a=int(90-age)
+b=int(age*52)
+c=int(age*12)
+d=int(age*365)
+print("you have",d,"days and",b,"weeks and",c,"months and",a,"years left")
