@@ -1,0 +1,5 @@
+a=int(input('Enter the number of overs bowled so far\n'))
+b=float(input('Enter the current run rate\n'))
+c=int(input('Enter the target score\n'))
+d=float((c-(b*a))/40)
+print("Required run rate is %.2f"%d)
