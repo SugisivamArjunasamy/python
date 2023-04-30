@@ -1,0 +1,5 @@
+a=int(input('Enter cost price of laptop:\n'))
+b=int(input('Enter loss percentage:\n'))
+c=b*100
+print("Selling price is Rs.{}.00/-".format(a-c))
+print("Loss Amount is Rs.{}.00/-".format(c))
