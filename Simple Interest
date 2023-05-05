@@ -1,0 +1,5 @@
+a=int(input('Enter the principal amount\n'))
+b=float(input('Enter the rate of interest\n'))
+c=float(input('Enter the time period (in years)\n'))
+s=float(round(((a*b*c)/100),ndigits=2))
+print("Simple Interest is",s)
