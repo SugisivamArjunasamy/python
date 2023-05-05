@@ -1,0 +1,3 @@
+a=int(input('Enter the value of feet:'))
+b=int(a*12)
+print("\nTotal inches will be:",b)
