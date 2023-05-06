@@ -1,0 +1,3 @@
+a=int(input('Enter price of first item:\n'))
+b=int(input('Enter price of second item:\n'))
+print("The total amount to be paid is Rs. {} /-".format(a+b))
