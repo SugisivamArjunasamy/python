@@ -1,0 +1,10 @@
+a=int(input('Enter the cost of A4sheet:\n'))
+b=int(input('Enter the cost of Pen:\n'))
+c=int(input('Enter the cost of Pencil:\n'))
+d=int(input('Enter the cost of Eraser:\n'))
+
+print("Items Details")
+print("A4sheet:",a)
+print("Pen:",b)
+print("Pencil:",c)
+print("Eraser:",d)
