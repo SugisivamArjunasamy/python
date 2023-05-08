@@ -1,0 +1,4 @@
+a=int(input("Enter the number of students in the class:\n"))
+b=int(input("Number of teams:"))
+c=int(a-(b*7))
+print(f"Leftout Students: {c}")
