@@ -1,0 +1,7 @@
+a=int(input("Enter number1: \n"))
+b=int(input("Enter number2: \n"))
+
+if(a<b):
+    print("number1 is smaller than number2.")
+else:
+    print("number2 is smaller than number1.")
