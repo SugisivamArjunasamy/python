@@ -1,0 +1,6 @@
+a=int(input("Enter number of pen's sold in a month:\n"))
+b=int(input("Enter cost of single pen:\n"))
+c=int(input("Enter transportation cost:\n"))
+profit=int((a*b)-c-100)
+
+print("Profit obtained is Rs.{}.00/-".format(profit))
