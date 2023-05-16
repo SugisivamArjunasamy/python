@@ -1,0 +1,7 @@
+a=int(input("Enter an integer : \n"))
+if(a%5==0):
+    print("{} is divisible by 5.".format(a))
+elif(a%5!=0):
+    print("{} is not divisible by 5.".format(a))
+elif(a==0):
+    print("{} is invalid".format(a))
