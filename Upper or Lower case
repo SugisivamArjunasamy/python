@@ -1,0 +1,5 @@
+a=input("Enter a Character: \n")
+if a.isupper():
+    print("{} is UPPERCASE".format(a))
+else:
+    print("{} is LOWERCASE".format(a))
