@@ -1,0 +1,5 @@
+a=input("Enter a Character : \n")
+if(a=="i" or a=="o" or a=="a" or a=="e" or a=="u" or a=="I" or a=="O" or a=="A" or a=="E" or a=="U"):
+    print("{} is vowel.".format(a))
+else:
+    print("{} is consonant.".format(a))
