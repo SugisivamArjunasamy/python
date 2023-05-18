@@ -1,0 +1,13 @@
+a=input("Enter name:\n")
+b=int(input("Enter Basic Salary:\n"))
+c=int(input("Enter HRA:\n"))
+d=int(input("Enter D.A.:\n"))
+f=2760
+e=int(b+c+d+f)
+print("PAYROLL DETAILS:")
+print("Name: Mr.{}".format(a))
+print("BASIC PAY: Rs.{}.00/-".format(b))
+print("HRA: Rs.{}.00/-".format(c))
+print("DA: Rs.{}.00/-".format(d))
+print("PF: Rs.{}.00/-".format(f))
+print("***GROSS SALARY: Rs.{}.00/-***".format(e))
