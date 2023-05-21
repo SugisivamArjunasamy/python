@@ -1,0 +1,3 @@
+a=int(input("Enter the number of items:\n"))
+b=int(a*15)
+print("Total amount is Rs.{}/-".format(b))
