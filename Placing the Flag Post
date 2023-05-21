@@ -1,0 +1,4 @@
+a=int(input("Enter X-coordinate of left bottom vertex:\n"))
+b=int(input("Enter Y-coordinate of left bottom vertex:\n"))
+c=int(input("Enter length of side:\n"))
+print("Centre of ground is at ({},{})".format((c),(a)))
