@@ -1,0 +1,4 @@
+a=int(input("Enter the amount given by customer:\n"))
+b=int(input("Enter the total amount of purchase:\n"))
+c=int(a-b)
+print("Balance to be paid is Rs. {} /-".format(c))
