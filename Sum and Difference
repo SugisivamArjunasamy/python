@@ -1,0 +1,5 @@
+a=int(input('Enter the first number\n'))
+b=int(input('Enter the second number\n'))
+
+print("Sum of two numbers is",(a+b))
+print("Difference between two numbers is",(a-b))
