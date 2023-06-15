@@ -1,0 +1,6 @@
+list=eval(input("Enter the list: "))
+max=list[0]
+for i in list:
+    if i>max:
+        i,max=max,i
+print(max)        
