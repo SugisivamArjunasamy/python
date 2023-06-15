@@ -1,10 +1,10 @@
-def fact(int num)
-{
- if n==0 or n==1:
+def fact(num):
+
+ if num==0 or num==1:
    return 1
  else:
-   return n*fact(n-1)
- }
-num=int(inuput("Enter an number"))
+   return num*fact(num-1)
+ 
+num=int(input("Enter an number : "))
 result=fact(num)
-print("The factorial of the {num} is : {result}")
+print(f"The factorial of the {num} is : {result}")
