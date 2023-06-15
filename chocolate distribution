@@ -1,0 +1,14 @@
+def distribute(chocolate,students):
+  if students==0 or len(chocolate)==0:
+    return 0
+  chocolate.sort()
+  
+  minn=float("inf")
+  for i in range(len(chocolate)-students+1):
+    diff=chocolate[i-students+1]-chocolate[i]
+    minn=min(minn,diff)
+    return minn
+chocolate=[1,4,6,9,6,2]
+students=5
+result=distribute(chocolate,students)
+print("minimum difference :",result)
