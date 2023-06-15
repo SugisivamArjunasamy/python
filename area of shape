@@ -1,0 +1,27 @@
+def area_of_circle():
+    radius=int(input("Enter the radius of the circle:"))
+    area=3.14*radius*radius
+    print(area)
+def area_of_square():
+    side=int(input("Enter the side of square:"))
+    area=side*side
+    print(area)
+def area_of_rectangle():
+    length=int(input("Enter the length of rectangle:"))
+    breath=int(input("Enter the breath of rectangle"))
+    area=length*breath
+    print(area)
+def area_of_triangle():
+    base=int(input("enter the base of triangle:"))
+    height=int(input("enter the height of triangle"))
+    area=0.5*base*height
+    print(area)
+choice=int(input("For area of circle press 1 \n For area of rectangle press 2 \n for area of square press 3 \n for area of triangle press 4 \n enter your choice:"))
+if choice==1:
+    area_of_circle()
+if choice==2:
+    area_of_rectangle()
+if choice==3:
+    area_of_square()
+if choice==4:
+    area_of_triangle()
