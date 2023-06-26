@@ -1,0 +1,9 @@
+from turtle import*
+speed=(20)
+bgcolor=("black")
+color=("cyan")
+b=200
+while b<500:
+    right(b)
+    forward(b*3)
+    b=b+1
