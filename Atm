@@ -1,0 +1,102 @@
+import getpass
+import string
+import os
+
+users=['sugi','sabaree','malarkodi','arjun']
+pins=['1234','5678','8906','1580']
+amounts=[10000,20000,30000,40000]
+count=0
+
+print("WELCOME TO OUR ATM")
+while True:
+    user=input("\nEnter User name :")
+    user=user.lower()
+    if user in users:
+        if user==users[0]:
+            n=0
+            break
+        elif user==users[1]:
+            n=1
+            break
+        else:
+            n=2
+            break
+    else:
+        print("\nInvalid user name")
+
+while count<3:
+    pin=input("\nEnter your pin :")
+    if pin.isdigit():
+        if user=='sugi':
+            if pin==pins[0]:
+                break
+            else:
+                count+=1
+                print("\nInvalid pin")
+        if user=='sabare':
+            if pin==pins[1]:
+                break
+            else:
+                count+=1
+                print("\nInvalid pin")
+        if user=='malarkodi':
+            if pin==pins[2]:
+                break
+            else:
+                count+=1
+                print("\nInvalid pin")
+        if user=='arjun':
+            if pin==pins[3]:
+                break
+            else:
+                count+=1
+                print("\nInvalid pin")
+    else:
+        count+=1
+        print("\nInvalid pin number")
+
+if count==3:
+    print("\n3 unsuccesfull attempts your card will be lock for 2 days")
+    exit()
+
+print("Login succesfull")
+
+
+while True:
+    option=input("\nSelect from following optins: \nStatement__(S) \nWithdraw___(W) \nLodgement__(L)  \nChange PIN_(P)  \nQuit_______(Q) \nType The Letter Of Your Choices: \n")
+    option=option.lower()
+    valid_option=['s','w','l','p','q']
+
+    if option=='s':
+        print(str.capitalize(user[n]),'you have',amounts[n],'amount in your account')
+    elif option=='w':
+        cash_out=int(input("\nEnter the amount"))
+        if cash_out>10000:
+            print("\namount must less then the 10000")
+        elif cash_out>amounts[n]:
+            print("\nYou have insufficiant balance")
+        else:
+            amounts[n]=amounts[n]-cash_out
+            print("\nNow your new balance is",amounts[n])
+    elif option=='l':
+        cash_in=int(input("\nEnter amount you whant to lodge"))
+        if cash_in>10000:
+            print("\nAmount must be lessthan 10000")
+        else:
+            amounts[n]=amounts[n]+cash_in
+            print("\nYour new balance is",amounts[n])
+    elif option=='p':
+        new_pin = str(getpass.getpass("\nEnter a new PIN: "))
+        if new_pin.isdigit() and new_pin != pins[n] and len(new_pin) == 4:
+            new_ppin = str(getpass.getpass("\nConfirim new PIN: "))
+            if new_ppin != new_pin:
+                print("\nPin missmatch")
+            else:
+                pins[n]=new_pin
+                print("\nThe new pin was saved succesfully")
+        else:
+            print("\nNew pin must be 4 number")
+    elif option=='q':
+        quit()
+    else:
+        print("\nOption dess not match")
