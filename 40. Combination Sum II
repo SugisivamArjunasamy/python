@@ -1,0 +1,27 @@
+import itertools
+import math
+
+class Solution:
+    def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
+
+        candidates = sorted(candidates)
+        return self.rec_combinations([], candidates, target)
+
+    def rec_combinations(self, comb, candidates, target):
+        res = []
+        if sum(candidates) < target:
+            return res
+        if target == 0:
+            res = [comb]
+            return res
+        
+        for i, c in enumerate(candidates):
+            if i > 0 and candidates[i-1] == c:
+                continue
+
+            if c <= target:
+                res += self.rec_combinations(comb+[c], candidates[i+1:], target-c)
+            if c > target:
+                break
+        
+        return res
