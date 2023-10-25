@@ -1,0 +1,30 @@
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        l = [1] * n
+        ret = 0
+
+        def f(n):
+            if n == 0:
+                return 1
+            r = 1
+            for i in range(1, 1+n):
+                r*= i
+            return r
+
+        def peerms(l):
+            one = l.count(1)
+            two = l.count(2)
+            return f(one+two)/(f(one)*f(two))
+
+        while l.count(1) > 1:
+            ret += peerms(l)
+            l.pop()
+            l.pop()
+            l.insert(0, 2)
+
+        ret += 1
+        if l.count(1) == 1:
+            ret += l.count(2)
+        
+        return int(ret)
+    
